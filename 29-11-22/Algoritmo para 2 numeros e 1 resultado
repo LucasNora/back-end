@@ -1,0 +1,35 @@
+// Algoritmo para soma //
+
+1 - Pedir o primeiro numero
+    1.1 - Pedir o segundo numero
+
+2 - Verificar se os dois números são positivos
+
+3 - Somar o primeiro mais o segundo numero
+
+4 - Apresentar a soma.
+
+
+
+
+
+
+//////////////////////////////////////////////////
+1 - Aguardar o primero numero
+2 - Aguardar o segundo numero
+3 - Calcular e armazenar a soma entre o primeiro e o segundo numero
+4 - O resultado do seu calculo é a soma armazena
+
+var num1;
+var num2;
+var calculo;
+
+readln("informe o primeiro numero", num1);
+readln("informe o segundo numero", num2);
+
+calculo = num1 + num2;
+
+writeln("O resultado do caclulo é:", calculo);
+
+
+
