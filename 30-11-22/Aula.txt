@@ -1,0 +1,49 @@
+Escrever um programa que baseado no valor do salario vai informar ao usuario a aliquota do Imposto de renda.
+
+Utilizando a seguinte tabela
+
+Base de calculo do Imposto de renda
+
+Até R$1903,98 Isento;
+De R$1.903,99 até R$2.826,65  7,%;
+De R$2.826,66 até R$3.751,05 15%;
+De R$3.751,06 até R$4.664,68 22,5%;
+Acima de R$4.664,69 27,5%;
+
+
+1 - Descrição narrativa;
+
+1 - Solicitar ao usuario o valor do seu salario;
+
+2 - Se o salario for menor ou igual a R$1.903,98, entao escreva o "Voce esta ISENTO";
+3 - Se o salario for maior que R$1.903,99 e menor que R$2.826,66, entao escreva: " Sua aliquota e de 7.5%";
+4 - Se o salario for maior que R$2.826,66 e menor que R$3.751,06, entao escreva: "Sua aliquota e de 15%";
+5 - Se o salario for maior que R$3.751,06 e menor que R$4.664,68, entao escreva: "Sua aliquota e de 22,5%";
+6 - Se o salario for maior ou igual a R$4.664,68, entao escreva "Sua aliquota e de 27,5%";
+
+
+2 - Pseudocodigo
+
+const faixa1 = 'ISENTO'
+const faixa2 = '7,5%'
+const faixa3 = '15%'
+const faixa4 = '22,5%'
+const faixa5 = '27,5'%'
+var salario
+
+readln("Informe o valor do seu salario", salario);
+
+if(salario <= 1.903,98)then;
+    writeln("Voce esta isento", faixa1);
+    
+elseif(salario >= 1.903,99) and <= 2.826,65)then; // elseif(se nao se) condicoes alinhadas, para economizar processamento, pois pode entrar na primeira, para 
+    writeln("Sua aliquota e de 7.5%", faixa2);
+
+elseif(salario >= 2.826,66 and <= 3.751,05)then;
+    writeln("Sua aliquota e de 15%", faixa3);    
+    
+elseif(salario >= 3.751,06 and <= 4.664,68)then;
+    writeln("Sua aliquota e de 22,5%", faixa4);
+    
+else // se nao entrou em nenhuma anterior, o else e usado para isso
+    whriteln("Sua aliquota e de 27.5%, faixa5);

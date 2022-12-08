@@ -1,0 +1,21 @@
+Fazer um programa que calcule o programa que calcule o valor do imposto de renda, baseado no salario.
+(Aliquota imposto de renda 7,5%)
+
+
+
+1 - Descrição narrativa
+
+1 - Solicitar ao usuario o valor do salario
+2 - calcular o valor do imposto a recolher baseado na aliquota de 7,5%
+3 - Mostrar ao usuario o valor do imposto calculado
+
+2 - 
+
+cost aliquota = 7,5;
+var salario;
+var impostoDevido;
+
+readln("informe o salario", salario);
+ImpostoDevido = salario * aliquota;
+writeln("O valor do Imposto devido é":ImpostoDevido);
+

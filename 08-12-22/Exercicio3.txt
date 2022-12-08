@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    cadeia nome, mes
+    real salario
+
+    escreva("Qual é o seu nome? ")
+    leia(nome)
+
+    escreva("Qual é o seu salario? R$ ")
+    leia (salario)
+
+    escreva("Qual é o mes? ")
+    leia (mes)
+
+    escreva("Nome do funcionário: ", nome, "\n")
+
+    escreva("Salário do funcionario:R$ ", salario,"\n")
+    
+    escreva("O funcionario ", nome ," tem um salario de R$", salario , " em ", mes,"\n")
+
+
+  }
+}
