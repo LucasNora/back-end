@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num1, soma, subtracao
+    real soma, subtracao
+
+    escreva("Digite um numero: ")
+    leia(num1)
+
+    soma = num1 + 1
+    subtracao = num1 - 1
+
+    escreva("O antecessor de " ,num1, " é: ",subtracao,"\n")
+
+    escreva("O sucessor de ",num1, " é: " ,soma,"\n")
+    
+    
+
+
+  }
+}

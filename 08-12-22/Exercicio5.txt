@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    real nota1, nota2, medianota
+
+    escreva("Digite a primeira nota: ")
+    leia(nota1)
+
+    escreva("Digite a segunda nota: ")
+    leia(nota2)
+
+    escreva("A primeira nota é: " ,nota1 ,"\n")
+
+    escreva("A segunda nota é: " ,nota2,"\n")
+
+    medianota = (nota1 + nota2) / 2
+
+		escreva("A media da nota é: ", medianota)
+	}
+  
+}
