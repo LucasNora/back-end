@@ -1,0 +1,3 @@
+Crie um algoritmo que leia um numero real e mostre na tela o seu dobro e sua terça parte.
+Ex:
+Digite um numero: 

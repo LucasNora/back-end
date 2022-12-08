@@ -1,0 +1,17 @@
+Faça um algoritmo que leia quanto dinheiro a pessoa tem na carteira em R$, mostre quantos dolares ele pode comprar, considere o US$1,00 = R$5,23
+
+programa {
+  funcao inicio() {
+
+    real reais, divisao
+
+    escreva ("Digite quantos reais você tem: R$ ")
+    leia(reais)
+
+    divisao = reais/5,23
+
+    escreva("Você pode comprar ",divisao," dolares")
+ 
+
+  }
+}
