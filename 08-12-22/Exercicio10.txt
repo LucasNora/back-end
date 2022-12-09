@@ -1,0 +1,2 @@
+Faça um algoritmo que leia a largura e a altura de uma parede, calcule e mostre a area a ser pintada e a quantidade de tinta necessaria para o servico, 
+sabendo que cada litro de tinta cobre uma area de 2m².
