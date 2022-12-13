@@ -1,0 +1,28 @@
+Crie um programa que leia a idade de 8 pessoas e guarde-as em um vetor. No final mostre:
+a) Qual é a media de idade das pessoas cadastradas
+b) Em quais posicoes temos pessoas com mais de 25 anos
+c) Qual foi a maior idade digitada (podem haver repeticoes)
+d) Em que posicoes a maior nota aparece
+
+
+
+programa {
+  funcao inicio() {
+    
+    inteiro idade[8]
+    inteiro somaidade = 0
+    inteiro mediaidade = 0 
+
+
+    para (inteiro i= 0; i< 8; i++){
+      escreva("Qual é a sua idade: ")
+      leia(idade[i])
+      somaidade = somaidade + idade[i]
+
+      }
+
+    mediaidade = somaidade/8
+    escreva("A media das idades é: ", mediaidade)
+
+  }
+}
