@@ -1,0 +1,33 @@
+/*
+  Faca um programa que leia 6 idades
+  e mostre a maior idade informada
+  Utilize funcoes para agrupar a responsabilidade do programa
+
+*/
+
+
+programa {
+
+  inteiro idades[6]
+  inteiro maiorIdade = 0
+
+  funcao obterIdade(){
+    para(inteiro i = 0; i < 6; i++){
+      escreva("Digite uma idade: ")
+      leia (idades[i])
+      
+
+      se(idades[i] > maiorIdade){
+        maiorIdade = idades[i]
+      }
+    }
+
+    escreva("A maior idade é ", maiorIdade)
+  }
+
+
+  funcao inicio(){
+    obterIdade()
+  }
+
+}

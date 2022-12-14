@@ -1,0 +1,39 @@
+/*
+  Faca um programa que solicite 4 notas do aluno
+  a - escreva a maior nota
+  b - escreva a media 
+*/
+
+programa {
+
+  inteiro notas[4]
+  inteiro maiorNota = 0
+  inteiro somarNota = 0
+  inteiro mediaNota = 0 
+
+  funcao obterNotas(){
+    para(inteiro i = 0; i < 4; i++){
+      escreva("Digite uma Nota: ")
+      leia (notas[i])    
+
+
+      se(notas[i] > maiorNota){
+        maiorNota = notas[i]
+      }
+
+    somarNota = somarNota + notas[i]
+    }
+
+    escreva("A maior nota é ", maiorNota,"\n")
+    escreva("A soma da nota é: ", somarNota, "\n")
+
+    mediaNota = somarNota/4
+    escreva("A media das idades é: ", mediaNota)
+  }
+
+  
+  funcao inicio() {
+    obterNotas()
+
+  }
+}

@@ -1,0 +1,39 @@
+programa {
+
+  real soma = 0.0
+  real media = 0.0
+  real maiorNota = 0.0
+
+  funcao quemEMaior(real num1, real num2){
+    se(num1 > num2){
+      maiorNota = num1
+    }
+  }
+  
+  funcao somar(real nota){
+    soma = soma + nota
+  }
+
+  funcao obterMedia(real soma){
+    media = soma/4
+  }
+
+   
+  funcao obterNotas(){
+   real notas[4]
+     para(inteiro i = 0; i < 4; i++){
+      escreva("Informe uma nota: ")
+      leia(notas[i])
+      somar(notas[i])
+      quemEMaior(notas[i], maiorNota)
+  }
+  
+  obterMedia(soma)
+  escreva("A media das notas é: ", media, "\n")
+  escreva("Sua maior nota é : ", maiorNota)
+
+}
+  funcao inicio() {
+    obterNotas()
+  }
+}
