@@ -1,0 +1,46 @@
+programa {
+
+  inteiro num1, num2 
+
+  funcao inteiro soma(inteiro num1, num2){
+    retorne (num1+num2)
+  }
+
+  funcao inteiro sub(inteiro num1, num2){
+    retorne (num1 - num2)
+  }
+
+  funcao inteiro multi(inteiro num1, num2){
+    retorne (num1 / num2)
+  }
+   
+  funcao real divi(real num1, num2){
+    retorne (num1 / num2)
+  } 
+
+  funcao entradas(){
+
+    escreva("Digite um numero: ")
+    leia (num1)
+    escreva("Digite outro numero: ")
+    leia (num2)
+
+  }
+
+  funcao saidas(){
+  escreva("A soma é: ", soma(num1, num2), "\n")
+  escreva("A subtracao é: ", sub(num1, num2), "\n")
+  escreva("A multiplicao é: ", multi(num1, num2), "\n")
+  escreva("A divisao é: ", divi(num1, num2), "\n")
+
+  }
+
+
+
+  funcao inicio() {
+    entradas()
+    saidas()
+
+    
+  }
+}

@@ -1,0 +1,25 @@
+//Faça um programa que escreva o texto "Olá mundo" quantas vezes o usuario quiser.
+
+
+programa {
+  
+  inteiro repeticoes = 0
+
+  funcao obterNumeroRepeticoes(){
+    escreva("Digite a quantidade vezes que quer repetir a mensagem: ")
+    leia(repeticoes)
+  }
+
+  funcao = escrevaMensagem(inteiro repeticoesLocal){
+    para(inteiro i = 0; i < repeticoes; i++){
+      escreva("Olá mundo! \n")
+
+    }
+  }
+  funcao inicio() {
+    
+    obterNumeroRepeticoes()
+    escrevaMensagem(repeticoes)
+  }
+
+}

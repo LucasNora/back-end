@@ -1,0 +1,53 @@
+programa {
+
+  inteiro valorRetornado = 0 
+
+  funcao inteiro meuPrimeiroRetorno(inteiro numeroDigitado){
+    retorne numeroDigitado
+
+  }
+
+  funcao inicio() {
+    valorRetornado = meuPrimeiroRetorno(3)
+
+    escreva("O valor retornado é: ", valorRetornado)
+  
+  }
+}
+
+
+
+
+programa {
+
+  inteiro valorRetornado = 0 
+
+  funcao inteiro meuCalculo(inteiro num1, inteiro num2){
+    retorne num1 + num2
+
+  }
+
+  funcao inicio() {
+    valorRetornado = meuCalculo(1 ,1)
+
+    escreva("O valor retornado é: ", valorRetornado)
+  
+  }
+}
+
+////////////////////////////modelo abreviado///////////////////////////////
+
+programa {
+  
+  funcao inteiro meuCalculo(inteiro num1, inteiro num2){
+
+    retorne num1 + num2
+
+  }
+
+  funcao inicio() {
+       
+    escreva("O valor retornado é: ", meuCalculo(1, 1))
+  
+  }
+}

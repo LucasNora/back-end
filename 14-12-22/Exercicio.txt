@@ -1,0 +1,41 @@
+/*3 paramentros tipo inteiros
+funcao tipo inteiro
+funcao calcula media
+*/
+
+
+
+programa {
+
+  funcao real media(inteiro num1, inteiro num2, inteiro num3){
+    retorne (num1 + num2 + num3)/3
+
+
+  }
+
+  
+  funcao inicio() {
+    escreva("A media é: ", media(1,1,1))
+    
+  }
+}
+
+
+
+
+
+programa {
+
+  funcao inteiro obterIdade(){
+    inteiro idade = 0
+    escreva("Digite uma idade: ")
+    leia(idade)
+    retorne idade
+  }
+
+  funcao inicio(){
+    escreva("A idade digitada é: ", obterIdade())
+
+  }
+
+}

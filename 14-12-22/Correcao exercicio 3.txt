@@ -1,0 +1,34 @@
+//Faça um programa que leia 5 numeros e calcule a media deles
+
+
+programa {
+
+  real soma = 0.0
+  real media = 0.0
+    
+  
+  funcao somar(real numero){
+    soma = soma + numero
+  }
+
+  funcao obterNum(real soma){
+    media = soma/4
+  }
+
+   
+  funcao obterNumeros(){
+   real numeros[4]
+     para(inteiro i = 0; i < 4; i++){
+      escreva("Informe um numero: ")
+      leia(numeros[i])
+      somar(numeros[i])
+    }
+  
+  obterNum(soma)
+  escreva("A media dos numeros é: ", media, "\n")
+  
+}
+  funcao inicio() {
+    obterNumeros()
+  }
+}
