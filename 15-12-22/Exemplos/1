@@ -1,0 +1,31 @@
+/*
+  Funcoes com parametros
+  Estruturas de repeticao
+  Expressoes (Aritimetricas e logicas)
+  Vetores
+
+  1- Criar um programa que obtenha 5 nomes, apos obter os nomes,
+     escreva a seguinte mensagem para cada nome obtido:
+     "Bom dia [NOME], é um prazer ter voce aqui"
+
+
+*/
+
+
+programa {
+
+  cadeia nomes[5]
+  funcao lerNomes(){
+    	para (inteiro i = 0; i < 5; i++){
+        escreva("Qual é o seu nome: ")
+        leia(nomes)
+        escreva(" Bom dia, ", nomes, "é um prazer ter você aqui! \n")
+      }
+
+  }
+
+
+  funcao inicio() {
+    lerNomes()
+  }
+}

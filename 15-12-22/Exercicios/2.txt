@@ -1,0 +1,37 @@
+2- Faca um programa que contenha a função aloMundo(). A função alo mundo deverá retornar um texto com a mensagem "Alo Mundo!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////OUTRA VERSAO//////////////////////////////////////////////
+
+programa {
+
+  
+  funcao aloMundo(){
+    escreva("Alo Mundo")
+  }
+
+  
+  funcao inicio() {
+    aloMundo(texto1)
+ 
+  }
+
+}

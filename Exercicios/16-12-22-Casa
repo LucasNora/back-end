@@ -1,0 +1,90 @@
+https://dgadelha.github.io/Portugol-Webstudio/#share=bszxzz3
+
+
+
+/*
+Obtenha o nome de 5 carros, o preço é o ano. Use um vetor para cada informação. Use funções para cada vetor, ao final preciso que para cada veículo, informe:
+
+O nome do veículo, o preço, o ano...
+Na mesma linha da mensagem, preciso que verifiquem:
+Se o carro for anterior a 2022 digite seminovo, caso contrário digite: 0 km.
+
+Um exemplo de como ficaria a mensagem final para cada carro:
+
+Argo, R$ 30000, 2019, seminovo
+Corolla, R$ 60000, 2022, 0km
+*/
+
+
+programa {
+
+  cadeia nomeCarro[5]
+  real precoCarro[5]
+  inteiro anoCarro[5]
+
+  funcao cadeia leiaTexto(cadeia mensagem){
+    cadeia texto
+    escreva(mensagem)
+    leia(texto)
+    retorne texto
+  }
+
+  funcao inteiro leiaInteiro(cadeia mensagem){
+    inteiro numero 
+    escreva(mensagem)
+    leia(numero)
+    retorne numero
+  }
+
+  funcao real leiaReal(cadeia mensagem){
+    real numero 
+    escreva(mensagem)
+    leia(numero)
+    retorne numero
+  }
+
+  funcao obterCarro(){
+    para(inteiro i = 0; i < 5; i++){
+      nomeCarro[i] = leiaTexto("Digite o nome do Carro: ")
+    }
+  }
+
+  funcao valorCarro(){
+    para(inteiro i = 0; i < 5; i++){
+      precoCarro[i] = leiaReal("Digite valor do Carro " + nomeCarro[i] + ": ")
+    }
+  }
+
+  funcao fabricacaoCarro(){
+    para(inteiro i = 0; i < 5; i++){
+      anoCarro[i] = leiaInteiro("Digite o ano de fabricacao do Carro "+ nomeCarro[i] + ": ")
+    }
+  }
+  
+  funcao avalicaoCarro(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva(nomeCarro[i], ", Valor do Carro R$", precoCarro[i], ", Ano do Carro: ", anoCarro[i] , ", ", fipeCarro(anoCarro[i]), "\n")
+    }
+  }
+
+  funcao cadeia fipeCarro(inteiro avalicao){
+    se(avalicao == 2022){
+      retorne "Zero Bala"
+    }senao se(avalicao <== 2000){
+      retorne "Lata Velha"
+    }senao{
+      retorne "Semi Novo"
+    }
+  }
+
+  funcao inicio() {
+
+    obterCarro()
+    valorCarro()
+    fabricacaoCarro()
+    
+    avalicaoCarro()
+    
+  }
+
+}

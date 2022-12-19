@@ -1,0 +1,113 @@
+3- Faça um programa para calcular a soma de 3 numeros inteiros, e mostrar o resultado para o usuário
+
+programa {
+
+  inteiro num1, num2, num3
+
+  funcao inteiro soma(num1, num2, num3){
+    retorne (num1+num2+num3)
+  }
+ 
+  funcao entradas(){
+
+    escreva("Digite um numero: ")
+    leia (num1)
+    escreva("Digite outro numero: ")
+    leia (num2)
+    escreva("Digite outro numero: ")
+    leia (num3)
+  
+  }
+
+  funcao saidas(){
+  escreva("A soma é: ", soma(num1, num2, num3), "\n")
+  
+
+  }
+
+  funcao inicio() {
+    entradas()
+    saidas()
+
+    
+  }
+}
+
+
+
+
+
+programa {
+
+
+  const qtdNumeros = 3
+  inteiro numeros[qtdNumeros]
+
+  funcao obterNumeros(){
+    para(inteiro i = 0, i < qtdNumeros, i++){
+      numero[i] = numeroDigitado()
+    }
+  }
+
+  funcao inteiro calcular(){
+    inteiro soma = 0
+    para(inteiro i = 0, i < qtdNumeros, i++){
+      soma = soma + numeros[i]
+      
+    }
+
+    retorne soma
+  }
+    
+    
+    funcao inteiro numeroDigitado(){
+    inteiro numero = 0
+    escreva("Digite um numero \n")
+    leia(numero)
+    retorne numero
+  }
+
+
+ funcao inicio() {
+    escreva("O resultado da soma é: ", calcular())
+  }
+}
+
+
+
+corrigir dps
+
+
+programa {
+
+
+  inteiro qtdNumeros = 3
+  inteiro numeros[3]
+
+  funcao obterNumeros(){
+    para(inteiro i = 0; i < qtdNumeros; i++){
+      numeros[i] = numeroDigitado()
+    }
+  }
+
+  funcao inteiro calcular(){
+    inteiro soma = 0
+    para(inteiro i = 0; i < qtdNumeros; i++){
+      soma = soma + numeros[i]
+      
+    }
+
+    retorne soma
+  }
+        
+    funcao inteiro numeroDigitado(){
+    inteiro numeros = 0
+    escreva("Digite um numero \n")
+    leia(numeros)
+    retorne numeros
+  }
+
+ funcao inicio() {
+    escreva("O resultado da soma é: ", calcular())
+  }
+}

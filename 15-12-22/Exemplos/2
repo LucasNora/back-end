@@ -1,0 +1,50 @@
+/*
+  Funcoes com parametros
+  Estruturas de repeticao
+  Expressoes (Aritimetricas e logicas)
+  Vetores
+
+  1- Criar um programa que obtenha 5 nomes, apos obter os nomes,
+     escreva a seguinte mensagem para cada nome obtido:
+     "Bom dia [NOME], é um prazer ter voce aqui"
+
+  2- Baseado no programa anterior, agora voce vai obter 5 notas,
+     Em um outro vetor (com nome aprovados),
+     voce vai armazenar um valor boleano(V ou F), informando se a 
+     pessoa esta aprovada ou reprovada (verdadeiro ou falso)
+     A nota precisa ser maior que 5 para que a pessoa correspondente seja aprovada.
+
+*/
+
+
+/////////////////////////////ERRADO///////////////////////////////////
+
+
+programa {
+
+  cadeia nomes[5]
+  real nota
+
+  funcao lerNomes(){
+    	para (inteiro i = 0; i < 5; i++){
+        escreva("Qual é o seu nome: ")
+        leia(nomes)
+        escreva("Qual é a sua nota: ")
+        leia(nota)
+
+        se nota>5
+
+        escreva(" Bom dia, " ,nomes, " voce está aprovado \n")
+
+        senao
+      }
+
+      escreva ("Bom dia," ,nomes," voce está reprovado \n")}
+
+  }
+  
+  funcao inicio() {
+    lerNomes()
+ 
+  }
+}

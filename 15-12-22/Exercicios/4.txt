@@ -1,0 +1,26 @@
+4- Faça um programa que escreva a mensagem "Bom dia" a quantidade de vezes que o usuário quiser.
+
+
+
+programa {
+  
+  inteiro repeticoes = 0
+
+  funcao obterNumeroRepeticoes(){
+    escreva("Digite a quantidade vezes que quer repetir a mensagem: ")
+    leia(repeticoes)
+  }
+
+  funcao = escrevaMensagem(inteiro repeticoesLocal){
+    para(inteiro i = 0; i < repeticoes; i++){
+      escreva("Bom dia! \n")
+
+    }
+  }
+  funcao inicio() {
+    
+    obterNumeroRepeticoes()
+    escrevaMensagem(repeticoes)
+  }
+
+}

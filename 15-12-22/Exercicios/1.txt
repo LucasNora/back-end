@@ -1,0 +1,38 @@
+1- Faça um programa que tenha uma função que retorne um numero digitado pelo usuário.
+A chamada da função a ser criada precisa estar dentro da função escreva()
+
+
+programa {
+
+  inteiro numero = 0 
+
+  funcao inteiro numeroDigitado(inteiro numero){
+    retorne(numero)
+  }
+
+  funcao inicio() {
+    escreva("Digite um numero qualquer: ")
+    leia(numero)
+    escreva("O usuario digitou o numero: ", numeroDigitado(numero))
+    
+  }
+}
+
+
+//////////////////////////////////////OUTRA VERSAO//////////////////////////////////////////////
+programa {
+
+  
+  funcao inteiro numeroDigitado{
+    inteiro numero = 0
+    escreva("Digite um numero: ")
+    leia(numero)
+    retorne(numero)
+  }
+
+  funcao inicio() {
+
+    escreva("O usuario digitou o numero: ", numeroDigitado(numero))
+    
+  }
+}
