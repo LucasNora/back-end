@@ -1,0 +1,49 @@
+programa {
+  /*
+  Tarefa:
+  Fazer um programa que gere uma matriz de 6x6 (Ou da sua preferência), que armazene para cada posição numeros aleatorios de 1 a 5.
+
+  Após preencher toda a matriz, em outra estrutura de repetição, faça uma varredura na matriz e caso encontre um numero 3 (ou outro numero armazenado na constante "numeroComparacao", escreva:
+  Na posição [NUMERO DA LINHA] X [NUMERO DA COLUNA] foi encontrado o numero 3
+  */
+
+  inclua biblioteca Util --> ut
+
+  inteiro matriz[6][6]
+  inteiro const numeroComparacao = 1
+
+  funcao preencherMatriz(){
+    escreva("Vai preencher a Matriz")
+    para(inteiro i=0; i<6; i++){
+      para(inteiro j=0;j<6;j++){
+        matriz[i][j] = ut.sorteia(1,5)
+      }
+    }
+  }
+
+  funcao lerMatriz(){
+    escreva("\n\nVai ler a Matriz \n")
+    para(inteiro i=0; i<6; i++){
+      para(inteiro j=0;j<6;j++){
+        se (compararDoisNumeros (matriz[i][j] /*== verdadeiro*/){                          // Não precisa ser utilizado, só colocar a função lógica verdadeira. já vai funcionar.
+          escreva("\n Na posicao ", i , "x", j, " foi encontrado o numero ", numeroComparacao)
+        }
+      }
+    }
+    escreva("\n\nFinalizado\n")
+  }
+
+  funcao logico compararDoisNumeros (inteiro numeroAtual){
+    se numeroAtual == numeroComparacao {
+      retorne verdadeiro
+    }senao{
+      retorne falso
+    }
+  }
+
+  funcao inicio() {
+    preencherMatriz()
+    lerMatriz()
+    
+  }
+}

@@ -1,0 +1,25 @@
+git
+
+cd C:\Users\PET0120847\Desktop\HTML\02_01_2023\13-01
+
+git init
+
+dir
+
+git init
+
+git remote add origin https://github.com/LucasNora/person-page.git
+
+git add .
+
+git commit -m "enviando arquivo"
+
+git push origin master
+
+git fetch
+
+git checkout main
+
+git merge master --no-ff --allow-unrelated-histories
+
+git push origin main

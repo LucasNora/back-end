@@ -1,0 +1,26 @@
+programa {
+
+
+  inclua biblioteca Util --> u
+
+  inteiro nomeMatriz[6][6] = {
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+
+  }
+
+  funcao inicio() {
+
+    para(inteiro i = 0; i < 6; i++){
+        para(inteiro j = 0; j < 6; j++){
+        u.aguarde(1000)
+        escreva("Linha: ", i, " x ", "Coluna: ", j,  " Valor na posicao: ", nomeMatriz[i][j], "\n")
+        
+      }
+    }
+  }
+}

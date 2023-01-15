@@ -1,0 +1,44 @@
+/* 1 - Faça um programa que preencha uma matriz 10x10 somente com numeros inteiros aleatorios
+   2 - Mostre sua matriz de forma ordenada
+*/
+
+
+
+programa {
+
+
+   inclua biblioteca Util --> ut
+
+  inteiro matriz[6][6]
+  
+  funcao preencherMatriz(){
+    escreva("Vai preencher a Matriz")
+    para(inteiro i=0; i<6; i++){
+      para(inteiro j=0;j<6;j++){
+        matriz[i][j] = ut.sorteia(1,5)
+      }
+    }
+  }
+
+
+  funcao lerMatriz(){
+    escreva("\n\nVai ler a Matriz \n")
+    para(inteiro i=0; i<6; i++){
+      para(inteiro j=0;j<6;j++){
+        se (compararDoisNumeros (matriz[i][j] /*== verdadeiro*/){                          // Não precisa ser utilizado, só colocar a função lógica verdadeira. já vai funcionar.
+          
+        }
+      }
+    }
+    escreva("\n")
+  }
+
+
+
+  funcao inicio() {
+
+    preencherMatriz()
+    lerMatriz()
+    
+  }
+}
